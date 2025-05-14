@@ -8,3 +8,11 @@ window.addEventListener("load",function(){
 
 
 })
+
+window.addEventListener("load",function(){
+    document.getElementById("viewAlert3").addEventListener("click", function(){
+        alert("Usuario duplicado. Intente con otro correo electrónico o nombre de usuario.")
+    })
+
+
+})
