@@ -16,3 +16,6 @@ window.addEventListener("load",function(){
 
 
 })
+if(document.getElementById("password").value!=document.getElementById("password1").value){
+    alert("Las contraseñas no coinciden")
+}

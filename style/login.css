@@ -102,7 +102,7 @@ form .username{
 }
 .recordar{
     margin: -0.3125rem 0 1.25rem 0.3125rem;
-    color: blue;
+    color: #A64D79;
     cursor: pointer;
 }
 .recordar:hover{
@@ -138,7 +138,7 @@ color: rgb(106, 30, 85)
 
 }
 .registrarse a{
-    color: blue;
+    color: #A64D79;
     text-decoration: none;
 }
 .registrarse a:hover{
