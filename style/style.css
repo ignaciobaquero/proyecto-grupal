@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navcolor {
+  background-color: rgb(59, 28, 50);
+}
+
+.bodycolor {
+  background-color: #1a1a1d;
+}
+
+/*# sourceMappingURL=style.css.map */
