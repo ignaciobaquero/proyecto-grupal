@@ -20,7 +20,6 @@
   background-color: #1a1a1d;
 }
 
-
 .title-sidebar {
   color: green;
 }
@@ -42,10 +41,8 @@
     transform: translateX(-150%);
   }
   100% {
-    transform: translateX(150%);
+    transform: translateX(350%);
   }
 }
-
-
 
 /*# sourceMappingURL=style.css.map */
