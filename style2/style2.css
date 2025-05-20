@@ -1,0 +1,315 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+background-color: rgb(36, 34, 34);
+font-size: 16px;
+  
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+ min-width: 100%;
+ min-height: 100vh;
+}
+
+
+
+.main2{
+    background-color:rgb(36, 34, 34);
+    color: blueviolet;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    flex-grow: 1;
+  
+    top: 55%;
+    left: 50%;
+    width:80%;
+
+    transform: translate(-50%,-50%);
+    background: rgb(18, 18, 18);
+    box-shadow: 0 15px 25pc blueviolet;
+    border-radius: 10px;
+}
+
+#prendas {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+    
+
+
+/*prendas*/
+
+/*pie de pagina*/
+
+body::-webkit-scrollbar{
+width: 5px;
+
+
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: #6a1e55a5;
+    border-radius: 5px;
+}
+
+  body{
+   
+    background-color: rgb(36, 34, 34);
+    font-size: 16px;
+      
+  
+        width: 100%;
+        height: 100%;
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+   
+}
+#h3Text{
+    margin-top: -30px;
+}
+#poleras{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 40%;
+    margin: 5%;
+    grid-gap: 30px;
+ flex-wrap: wrap;
+    align-content: flex-start;
+}
+#poleras figure{
+    width: 100%;
+    transition: all 300ms;
+
+}
+#poleras figure:hover{
+    transform: scale(1.15);
+}
+
+figure {
+    position: relative;
+    height: 100%;
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px ; 
+    cursor: pointer;
+}
+#poleras figure img{
+    width: 100%;
+    height: 100%;
+
+
+}
+.capa{
+    
+    border-radius:6px ;
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: #6a1e55a5;
+transition: all 500ms ease-out;
+opacity: 0;
+visibility: hidden;
+text-align: center;
+}
+#poleras figure:hover >.capa{
+    opacity: 1.5;
+    visibility: visible;
+}
+#poleras figure:hover >.capa h3{
+
+    margin-top: 5.625rem ;
+    margin-bottom: 0.9375rem;
+}
+
+#poleras figure .capa h3{
+    color: white;
+    font-weight: 25rem;
+    margin-bottom: 7.5rem;
+    transition: all 500ms ease-out;
+    margin-top: 1.875rem;
+}
+#poleras figure .capa p{
+    color: white;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 13.75rem;
+    margin: auto;
+}
+.boton{
+    display: block;
+    width: 50%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 43.75rem;
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 0.9375rem 1.875rem;
+    transition: all 300ms;
+    transform: translate(50%,9.375rem);
+
+ text-align: center;
+    color: black;
+    text-decoration: none;
+}.boton:hover{
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    color: white;
+    
+}
+.mover{
+transform: translate(9.375rem,0.9375rem)
+}
+.scalar{
+    transform: scale(2.5);
+}
+@media(max-width:1200px){
+ 
+#poleras2{
+    transform: translate(-250%,-50%);
+    height: 100px;
+    width: 100px;
+}
+}
+
+@media(max-width:976px){
+    
+}
+@media(max-width:1200px){
+    body{
+        font-size: 10px;
+    }
+    .capa{
+        font-size: 14px;
+  
+    #capa4{
+margin-top: -30%;
+}
+    }
+    p{
+      
+        transform: scale(.9);
+    }
+    h3{
+         
+        transform: scale(.9);
+    }
+    .boton{
+        margin-top: -110px;
+        transform: scale(2.1);
+        text-align:c ;
+    }
+    }
+
+
+
+
+
+@media(max-width:992px){
+    #poleras h3{
+        font-size: 10px;
+    }
+     #poleras p{
+        font-size: 6px;
+    }
+        body{
+            font-size: 10px;
+            
+        }
+        .capa{
+            font-size: 10px;
+        
+            #capa4{
+                margin-top: -40%;/*no tocar funbca*/
+                }
+        }
+       h3{
+
+           margin-top: 0px;
+       }
+    
+
+        .boton{
+                margin-top: -130px;
+            transform: scale(.9);
+            text-align: center;
+        }
+
+    }
+  
+
+@media(max-width:768px){
+    #poleras h3{
+        font-size: 6px;
+    }
+     #poleras p{
+        font-size: 4px;
+    }
+    body{
+        font-size: 12px;
+        
+    }
+    .capa{
+        font-size: 12px;
+    
+    #capa4{  /*no entiendo... pero funciona;dejar asi, mueven y hacen cagada*/
+margin-top: -40%;
+}
+    }
+
+    .boton{
+            margin-top: -130px;
+        transform: scale(.5);
+        text-align: center;
+    }
+
+}
+
+@media(max-width:576px){
+    #poleras h3{
+        font-size: 3px;
+    }
+     #poleras p{
+        font-size: 2px;
+    }
+    body{
+        font-size: 2px;
+        
+    }
+  
+
+    .capa{
+        font-size: 5px;
+    
+    #capa4{  /*no entiendo... pero funciona;dejar asi,mueven y hacen cagada*/
+        
+margin-top: -90%;
+}
+
+    }
+    p{
+    font-size: 5px;
+}
+
+    .boton{
+            margin-top: -150px;
+        
+        text-align: center;
+    }
+
+}
