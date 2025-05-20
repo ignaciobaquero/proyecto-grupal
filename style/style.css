@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+.title-color {
+  color: rgb(139, 21, 134) !important;
+}
+
 .navcolor {
-  background-color: rgb(59, 28, 50);
+  background-color: rgb(59, 28, 50) !important;
+}
+
+.navheader {
+  background-color: rgb(82, 35, 68) !important;
 }
 
 .bodycolor {
@@ -14,6 +22,10 @@
 
 .title-sidebar {
   color: green;
+}
+
+.letra {
+  color: rgb(90, 35, 74) !important;
 }
 
 .hover-2 {
