@@ -11,28 +11,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style2/style2.css" />
   </head>
 
+
   <body class="d-flex flex-column min-vh-100">
-
-
-
- 
     <header>
-      <nav class="navbar navbar-dark navcolor fixed-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+      <nav class="navbar navcolor fixed-top">
+        <div class="container-fluid">
           <a class="navbar-brand title-animacion text-white title-color fw-bold" href="#">MegaStreamHub</a>
     
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        
+          <button class="navbar-toggler bodycolor" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
     
-        <div class="offcanvas offcanvas-end navcolor text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <h1 class="hover-2 text-white text-center mt-3 fs-6 letra">
+          Todas las películas que buscás, en un solo lugar. ¡Aquí las encontrarás a todas!
+        </h1>
+    
+      
+        <div class="offcanvas offcanvas-end navcolor" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title fw-bold title-sidebar" id="offcanvasNavbarLabel">MegaStreamHub</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -43,10 +45,17 @@
                 <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="offcanvasDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Categorías
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasDropdown">
+                <ul class="dropdown-menu " aria-labelledby="offcanvasDropdown">
                   <li><a class="dropdown-item" href="#">Acción</a></li>
                   <li><a class="dropdown-item" href="#">Comedia</a></li>
                   <li><a class="dropdown-item" href="#">Drama</a></li>
@@ -54,20 +63,13 @@
               </li>
             </ul>
             <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-  
     </header>
-
-
-  
-
-
-
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -133,128 +135,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-        
-        
-        
-        <main class="main">
-        <div class="flex-center">
-            <div id="poleras">
-                <a id="algo" href="/pages/Login.html" target="_blank">
-                    <figure>
-
-                    <img src="assets/thor.jpeg" alt="prueba">
-                    <div class="capa">
-                      <div id="capa4">
-                        
-                        <h3>Thor</h3>
-                        <p>100.000 USD</p>
-                        
-                    
-                      </div>
-                    </div>
-                  </figure>
-                  </a>
-
-                 <a id="algo" href="/pages/Login.html" target="_blank">
-                <figure>
-
-                    <img src="assets/avatar.avif" alt="">
-                    <div class="capa">
-                      <div id="capa4">
-                        <h3>Avatar</h3>
-                        <p>39.90 USD</p>
-                        
-                      </div>
-                    </div>
-                  </figure>
-                </a>
-                
-                
-                  <a id="algo"   href="/pages/Login.html" target="_blank">
-                  <figure>
-                    
-                    <img src="assets/mi-probre-angelito-2.jpg"  alt="tt">
-                      <div class="capa">
-                        <div id="capa4">
-                          <h3>Mi probre angelito</h3>
-                          <p>24.90 USD</p>
-                          
-                        </div>
-                      </div>
-                    </figure>
-                  </a>
-                     <a id="algo"   href="/pages/Login.html" target="_blank">
-                  <figure>
-                    
-                    <img src="assets/spiderman-lejos-de-casa.webp"  alt="tt">
-                      <div class="capa">
-                        <div id="capa4">
-                          <h3>Spìderman lejos de casa</h3>
-                          <p>.90 USD</p>
-                          
-                        </div>
-                      </div>
-                    </figure>
-                  </a>
-                     <a id="algo"   href="/pages/Login.html" target="_blank">
-                  <figure>
-                    
-                    <img src="assets/jaws.jpg"  alt="tt">
-                      <div class="capa">
-                        <div id="capa4">
-                          <h3>tiburon asesino</h3>
-                          <p>29.90 USD</p>
-                          
-                        </div>
-                      </div>
-                    </figure>
-                  </a>
-                     <a id="algo"   href="/pages/Login.html" target="_blank">
-                  <figure>
-                    
-                    <img src="assets/matriz.jpg"  alt="tt">
-                      <div class="capa">
-                        <div id="capa4">
-                          <h3>Matrix</h3>
-                          <p>32.90 USD</p>
-                          
-                        </div>
-                      </div>
-                    </figure>
-                  </a>
-                     <a id="algo"   href="/pages/Login.html" target="_blank">
-                  <figure>
-                    
-                    <img src="assets/shrek.jfif"  alt="tt">
-                      <div class="capa">
-                        <div id="capa4">
-                          <h3>shrek</h3>
-                          <p>14.90 USD</p>
-                          
-                        </div>
-                      </div>
-                    </figure>
-                  </a>
-                  
-                  <a id="algo" href="/pages/Login.html" target="_blank">
-                     <figure>
-
-                        <img src="assets/minecraft.jpg" alt="">
-                        <div class="capa">
-
-                          <div id="capa4">
-                            <h3>Minecraft</h3>
-                            <p>19.90USD</p>
-                            
-                          </div>
-                      </div>
-                    </figure>
-                  </a>
-          </div>
-                
-          </div>
-              </main>
-
 
     <footer class="bg-dark text-white text-center text-lg-start mt-auto">
       <div class="container p-4">
@@ -305,5 +185,3 @@
     </footer>
   </body>
 </html>
-
-
