@@ -12,9 +12,11 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body class="bodycolor">
-    <div>
-    <nav class="navbar navcolor fixed-top">
+
+
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+  <nav class="navbar navcolor fixed-top">
       <div class="container-fluid">
         <div class="d-flex justify-content-between w-100 align-items-center">
           <a class="navbar-brand title-animacion text-white title-color fw-bold" href="#">
@@ -22,13 +24,9 @@
           </a>
         
           <button
-            class="navbar-toggler bodycolor"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
+            class="navbar-toggler bodycolor">
+
+          
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -56,18 +54,83 @@
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+
           </div>
           <div class="offcanvas-body navcolor">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#"
-                  >REGISTER</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">LOGIN</a>
+                <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item dropdown pt-5">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -75,45 +138,138 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Categorias
+                  Dropdown
                 </a>
-                <ul class="dropdown-menu bg-opacity-50 text-white">
-                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Ciencia Ficción</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Suspenso</a>
+                    <a class="dropdown-item" href="#">Another action</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Las mas populares</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
               </li>
+        </div>
+      </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://m.media-amazon.com/images/S/pv-target-images/d7eb4c08dd806241b67fe5faf230274596d8d3b31400e016c969cae354c89d9d.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWqJEkqMJ0uSQzEgA56Fic6LFuSzBjWyZiw&s"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-auto">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">MegaStreamHub</h5>
+            <p>Bienvenido a MegaStreamHub. Aquí encontrarás Peliculas, Series y Documentales</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Enlaces útiles</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#" class="text-white">Inicio</a></li>
+              <li><a href="#" class="text-white">Peliculas</a></li>
+              <li><a href="#" class="text-white">Series</a></li>
+              <li><a href="#" class="text-white">Documentales</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contactanos</h5>
+            <ul class="list-unstyled mb-0">
+              <li>Email: contacto@misitio.cl</li>
+              <li>Teléfono: +56 9 1234 5678</li>
             </ul>
             <form class="d-flex mt-3" role="search">
               <input
                 class="form-control me-2"
-                type="search "
-                placeholder="..."
+                type="search"
+                placeholder="Search"
                 aria-label="Search"
               />
               <button class="btn btn-outline-success" type="submit">
-                Buscar
+                Search
               </button>
             </form>
           </div>
         </div>
       </div>
     </nav>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+
+      <div class="text-center p-3 bg-secondary">
+        © 2025 MegaStreamHub. Todos los derechos reservados.
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>
