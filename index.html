@@ -16,25 +16,19 @@
 
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navcolor fixed-top">
-        <div class="container-fluid">
+      <nav class="navbar navbar-dark navcolor fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
           <a class="navbar-brand title-animacion text-white title-color fw-bold" href="#">MegaStreamHub</a>
     
-        
-          <button class="navbar-toggler bodycolor" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
     
-        <h1 class="hover-2 text-white text-center mt-3 fs-6 letra">
-          Todas las películas que buscás, en un solo lugar. ¡Aquí las encontrarás a todas!
-        </h1>
-    
-      
-        <div class="offcanvas offcanvas-end navcolor" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end navcolor text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title fw-bold title-sidebar" id="offcanvasNavbarLabel">MegaStreamHub</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -45,17 +39,10 @@
                 <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="offcanvasDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Categorías
                 </a>
-                <ul class="dropdown-menu " aria-labelledby="offcanvasDropdown">
+                <ul class="dropdown-menu" aria-labelledby="offcanvasDropdown">
                   <li><a class="dropdown-item" href="#">Acción</a></li>
                   <li><a class="dropdown-item" href="#">Comedia</a></li>
                   <li><a class="dropdown-item" href="#">Drama</a></li>
@@ -63,12 +50,13 @@
               </li>
             </ul>
             <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
       </nav>
+  
     </header>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
