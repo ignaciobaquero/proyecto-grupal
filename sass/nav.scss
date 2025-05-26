@@ -20,23 +20,23 @@
   color: green;
 }
 .letra {
-  color: rgb(90, 35, 74) !important;
+  color: rgb(192, 48, 151) !important;
+  box-shadow: 0px 2px 0px 0px rgb(153, 9, 219) !important;
 }
 
 .hover-2 {
   display: inline-block;
   padding-top: 1%;
   animation: marquee 15s linear infinite;
-  color: white;
+  color: rgb(96, 33, 138);
   font-size: 1rem;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(-150%);
+    transform: translateX(-110%);
   }
   100% {
-    transform: translateX(150%);
+    transform: translateX(400%);
   }
 }
-
